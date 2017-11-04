@@ -87,14 +87,14 @@ for i in array:
 
     z+=1
 
-print(postive_score)
-print(no_score)
-print(negative_score)
+#print(postive_score)
+#print(no_score)
+#print(negative_score)
 #print(pos_running)
-print("")
-print(pos_ave)
+#print("")
+#print(pos_ave)
 #print(neg_running)
-print(neg_ave)
+#print(neg_ave)
 tally_total = postive_score + no_score + negative_score
 dictionary2 = {'Positive_Amount': postive_score, 'Negative_Amount': negative_score, 'Neutral_Amount': no_score, 'Positive_Average': pos_ave, 'Negative_Average': neg_ave, 'Total': tally_total}
 dic_array.append(dictionary2)
