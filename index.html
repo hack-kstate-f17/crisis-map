@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
   </head>
-  <body style="width: 70%; margin: auto;">
-    <!-- <h3>My Google Maps Demo</h3> -->
 
-    <form id="form">
-        <input id="search" type="text" name="search" placeholder="search for a location" required>
-        <input id="button" type="submit" value="search">
-    </form>
+  <div class="header">
+    <div class="header-item">
+      <h1> Crisis Map </h1>
+    </div>
+    <div class="header-item">
+      <form id="form">
+          <input id="search" type="text" name="search" placeholder="search for a location" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Search for a location'"required>
+          <!-- <input id="button" type="submit" value="search"> -->
+          <button id="button" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+  </div>
+    <div class="top-line"></div>
+
+  <body>
+    <!-- <h3>My Google Maps Demo</h3> -->
+    <div class="body-container">
+
+    <div class="map-container">
+      <div id="map">
+      </div>
+
 
 
     <div id="map">
+
+      <h3>Disasters visualized through tweets</h3>
+      <!-- <p>Crisis map helps to identify public response to disasters through Twitter data.</p> -->
+      <p class="p2">Research conducted by Doina Caragea with K-State's machine learning and data science lab, and provided by ACM-W.</p>
     </div>
+
+    <div class="bottom-line"></div>
 
     <div id="chart_div">
     </div>
-    <!-- <input type="button" value="Hashtag Data Loading. Press me for update" onclick="window.location.reload(false)"> -->
+    <div class="bottom-line"></div>
 
-    <div id="donutchart" style="width: 900px; height: 500px;">
+    <div id="donutchart" style="width:100%;height: 500px;margin:0 auto;">
     </div>
+
+    <!-- Cale code! -->
+    <script src="https://unpkg.com/compromise/builds/compromise.min.js"></script>
+    <script type="text/javascript" src="result.json"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <div class = "listcontainer">
+      <p class = "listtitle"><strong>Frequently Mentioned</strong></p>
+      <div class = "colorlist">
+      <ul>
+        <div class = "listalign">
+          <div class = "list1">
+        <li id = "nouns" class = "listitem"> </li>
+      </div>
+        <div class = "list1">
+        <li id = "adjectives" class = "listitem"> </li>
+      </div>
+        <div class = "list1">
+        <li id = "verbs" class = "listitem"> </li>
+      </div>
+      </div>
+      </ul>
+    </div>
+    </div>
+
+    <div class = "jscontainer">
+      <div class = "searchbar">
+        <input type="text" id="myText" class= "inputfield" placeholder="enter word/phrase">
+        <button onclick="test()" class = "submitbutton">Search</button>
+      </div>
+
+      <div class = "myData">
+        <p id = "display1"> </p>
+        <p id = "display2"> </p>
+        <p id = "display3"> </p>
+      </div>
+    </div>
+
+    <div class="bottom-line"></div>
+
+    <div class="donate">
+      <h4 class="donate"> Donate </h4>
+    </div>
+  </div>
 
     <!-- <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbJ3fxgeRnJ0aTP2_bsdGlChoyVki465U">

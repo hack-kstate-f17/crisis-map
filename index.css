@@ -1,21 +1,216 @@
+h1 {
+    /*color: #ff8200;*/
+    color:#D7DADB;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Fredoka One', cursive;*/
+    font-size: 50px;
+    padding-left: 10%;
+}
+
+#form{
+  align-self: flex-end;
+  padding-right: 10px;
+}
+
 #map {
     height: 400px;
     width: 100%;
-    margin-top: 25px;
+}
+
+#donate{
+    height: 100px;
+    width: 100%;
+}
+
+/*Lines*/
+
+.top-line {
+  width:100%;
+  height:7px;
+  background-color:#FC4349;
+}
+
+.bottom-line{
+  margin-top: 20px;
+  width:100%;
+  height:7px;
+  background-color:#FC4349;
+}
+
+.header{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#2C3E50;
+  flex-wrap: wrap;
+
+}
+
+.map-container{
+  /*background-color:#D7DADB;*/
+  background-color: #e4e4e4;
+  padding:3% 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header-item{
+  margin: 0 20px;
+}
+
+html{
+  /*background-color:#acaeaf;*/
+  background-color: #cacaca;
 }
 
 body {
     text-align: center;
-    padding-top: 25px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body-container{
+  width:70%;
+  margin: 0 auto;
 }
 
 input {
     /*height: 25px;*/
     width: 180px;
+    font-size: 16px;
 }
+
 #button {
-    height: 25px;
-    width: 75px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    /*background-color: #6DBCDB;*/
+    background: #FC4349;
+    border-style:none;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.p2 {
+  font-size: 14px;
+}
+
+.donate {
+    background-color: #e4e4e4;
+    padding:3% 5%;
+    margin: 0 auto;
+}
+
+h4 {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.jscontainer {
+  background-color: orange;
+  font-family: 'Roboto', cursive;
+}
+
+.searchbar {
+  font-family: 'Roboto', cursive;
+  margin-bottom: 5%;
+  margin-top: 2.5%;
+  background-color: orange;
+  padding-top: 3.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.inputfield {
+  font-family: 'Roboto', cursive;
+  width: 80%;
+  height: 70px;
+  font-size: 50px;
+  border-style: none;
+}
+
+.submitbutton {
+  font-family: 'Roboto', cursive;
+  border-style: none;
+  background-color: #F0F0F0;
+  height: 72px;
+  width: 10%;
+}
+
+.myData {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 200%;
+}
+
+#display1 {
+  background-color: #e4e4e4;
+  padding: 1.5%;
+  padding-top: 1.5%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+#display2 {
+ background-color: #e4e4e4;
+ padding: 1.5%;
+ padding-top: 1.5%;
+ margin-left: 12.5%;
+ margin-right: 12.5%;
+}
+
+#display3 {
+ background-color: #e4e4e4;
+ padding: 1.5%;
+ padding-top: 10%;
+ margin-left: 12.5%;
+ margin-right: 12.5%;
+}
+
+.listcontainer {
+    font-family: 'Roboto', cursive;
+    background-color: white;
+    padding-top: .25%;
+    padding-bottom: 3.5%;
+}
+
+.listtitle {
+  font-size: 300%;
+}
+
+.listitem {
+  margin-top: 2.25%;
+  margin-bottom: 2.25%;
+}
+
+.listalign {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 8.5%;
+  font-size: 140%;
+  margin-top: -4.25%;
+  margin-bottom: 1.25%;
+}
+
+.list1 {
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+}
+
+.colorlist {
+  background-color: #e4e4e4;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
 }
 /*input:invalid {
     outline: 2px solid red;

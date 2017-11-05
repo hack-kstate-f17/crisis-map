@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawBasic);
+
+    function drawBasic() {
+      var data = google.visualization.arrayToDataTable([
+        ['Hashtag', 'Hashtag Usage', { role: 'style' }],
+        ['hurricane', 5000, '#69c9f2'],
+        ['harvey', 3000, '#c6ebfa'],
+        ['BREAKING', 317, '#69c9f2'],
+        ['Breaking', 146, '#c6ebfa'],
+        //['\u062a\u0631\u0645\u0628', 70, '#69c9f2'],
+        ['rockport', 58, '#c6ebfa'],
+        ['Texas', 4191, '#69c9f2'],
+        ['climatechange', 221, '#c6ebfa'],
+        ['Victoria', 59, '#69c9f2'],
+        ['EEUU', 133, '#c6ebfa'],
+        ['PortLavaca', 416, '#69c9f2'],
+        ['TheResistance', 71, '#c6ebfa'],
+        ['bcswx', 196, '#69c9f2'],
+        ['Maga', 69, '#c6ebfa'],
+        ['texas', 158, '#69c9f2'],
+        ['Mercy', 374, '#c6ebfa'],
+        //['\u0627\u0645\u0631\u064a\u0643\u0627', 61, '#69c9f2'],
+        //['hurac\u00e1n', 80, '#c6ebfa'],
+        ['RuinAGoodTimeIn4Words', 55, '#69c9f2'],
+        ['OURAGAN', 92, '#c6ebfa'],
+        ['Trump2020', 375, '#69c9f2'],
+        ['TrumpTrain', 70, '#c6ebfa'],
+        ['Trump', 394, '#69c9f2'],
+        ['harveyhurricane', 161, '#c6ebfa'],
+        ['txwx', 1120, '#69c9f2'],
+        ['Katrina', 116, '#c6ebfa'],
+        ['Rockport', 1533, '#69c9f2'],
+        ['ALERTE', 69, '#c6ebfa'],
+        ['Sandy', 77, '#69c9f2'],
+        ['blueshed', 67, '#c6ebfa'],
+        ['CripTheVote', 142, '#69c9f2'],
+        ['Gorka', 59, '#c6ebfa'],
+        ['HurricaineHarvey', 459, '#69c9f2'],
+        ['harvey', 3032, '#c6ebfa'],
+        ['FelizSabado', 51, '#69c9f2'],
+        ['hurricane', 1141, '#c6ebfa'],
+        ['SanAntonio', 60, '#69c9f2'],
+        ['CorpusChristi', 489, '#c6ebfa'],
+        ['VIDEO', 85, '#69c9f2'],
+        ['TEXAS', 72, '#c6ebfa'],
+        //['\u062a\u0643\u0633\u0627\u0633', 267, '#69c9f2'],
+        //['Harvey\u0650', 123, '#c6ebfa'],
+        ['HurricaneHarvey', 3266, '#69c9f2'],
+        ['HurricaneStrong', 141, '#c6ebfa'],
+        //['\u0647\u0627\u0631\u0641\u064a', 535, '#69c9f2'],
+        ['MAGA', 83, '#c6ebfa'],
+        ['Flooding', 86,'#69c9f2'],
+        ['Fulton', 78, '#c6ebfa'],
+        ['Hurrikan', 68, '#69c9f2'],
+        ['HurricanHarvey', 370, '#c6ebfa'],
+        ['hurricaneharvey2017', 103, '#69c9f2'],
+        ['Landfall', 1503, '#c6ebfa'],
+        ['HurricaneHarvery', 429, '#69c9f2'],
+        ['JoeArpaio', 242, '#c6ebfa'],
+        ['Refugio', 86, '#69c9f2'],
+        ['JeffPiotrowski', 50, '#c6ebfa'],
+        ['prayfortexas', 250, '#69c9f2'],
+        ['glswx', 166, '#c6ebfa'],
+        ['Harvey', 54678, '#69c9f2'],
+        ['Travel', 69, '#c6ebfa'],
+        ['HarveyStorm', 962, '#69c9f2'],
+        ['weather', 86, '#c6ebfa'],
+        ['Huracan', 66, '#69c9f2'],
+        ['abc13', 86, '#c6ebfa'],
+        ['stxwx', 888, '#69c9f2'],
+        ['Category4', 64, '#c6ebfa'],
+        ['26Ago', 107, '#69c9f2'],
+        ['saturdaymorning', 89, '#c6ebfa'],
+        ['harvey2017', 56, '#69c9f2'],
+        ['ThursdayThoughts', 365, '#c6ebfa'],
+        ['GOES16', 797, '#69c9f2'],
+        ['hurricanharvey', 108, '#c6ebfa'],
+        //['\u0627\u0639\u0635\u0627\u0631', 52, '#69c9f2'],
+        ['KHOU11', 51, '#c6ebfa'],
+        ['shelters', 106, '#69c9f2'],
+        ['Austin', 64,'#c6ebfa'],
+        ['ksatwx', 331, '#69c9f2'],
+        ['Arpaio', 100,'#c6ebfa'],
+        ['flooding', 115, '#69c9f2'],
+        ['hurricaneharvey', 500, '#c6ebfa'],
+        ['USA', 233, '#69c9f2'],
+        ['ccwx', 131, '#c6ebfa'],
+        ['houwx', 327, '#69c9f2'],
+        ['Hurricane', 1664, '#c6ebfa'],
+        //['\u062d\u0644\u0641_\u0627\u0644\u0641\u062c\u0627\u0631', 70, '#69c9f2'],
+        //['Hurac\u00e1n', 902, '#c6ebfa'],
+        ['Harvey2017', 959, '#69c9f2'],
+        ['TX', 113, '#c6ebfa'],
+        ['TXWX', 517, '#69c9f2'],
+        ['HuracanHarvey', 130, '#c6ebfa'],
+        ['wfaaweather', 75, '#69c9f2'],
+        ['ATXShelter', 91, '#c6ebfa'],
+        ['trndnl', 98, '#69c9f2'],
+        ['Ocean', 54, '#c6ebfa'],
+        ['Ouragan', 91, '#69c9f2'],
+        ['Galveston', 156, '#c6ebfa'],
+        ['Houston', 363, '#69c9f2'],
+        ['TexasHospitality', 897, '#c6ebfa'],
+        ['TXwx', 259, '#69c9f2'],
+        ['ouragan', 152, '#c6ebfa'],
+        ['HARVEY', 2260, '#69c9f2']
+      ]);
+
+      var options = {
+        legend: 'none',
+        title: 'Hashtag Usage',
+        width: 1000,
+        height: 2400,
+        chartArea: {width: '60%', height: '100%'},
+        hAxis: {
+          title: '',
+          minValue: 0
+        },
+        vAxis: {
+          title: ''
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+}
+  </script>
+  </head>
+  <body>
+    <div id="chart_div"></div>
+  </body>
+</html>

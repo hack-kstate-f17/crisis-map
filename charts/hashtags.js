@@ -24,6 +24,11 @@ function drawBasic() {
   var data = google.visualization.arrayToDataTable(hashtag_data);
 
   var options = {
+    titleTextStyle: {
+      //  color: <string>,    //
+      fontSize: 24
+    },
+    backgroundColor: '#e4e4e4',
     legend: 'none',
     title: 'Hashtag Usage',
     chartArea: {width: '50%'},
