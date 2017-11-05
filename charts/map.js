@@ -2,11 +2,13 @@ var coords = [[-96.9935, 28.8169], [-95.3832, 29.7629], [8.4445, 46.813], [170.3
 
 function initMap(loc) {
 
-    var latLong = new google.maps.LatLng(parseFloat(loc.lat), parseFloat(loc.lng));
+    // var latLong = new google.maps.LatLng(parseFloat(loc.lat), parseFloat(loc.lng));
+    // hardcoding Houston, TX for Harvey showcase
+    var latLong = new google.maps.LatLng(parseFloat(29.761993), parseFloat(-95.366302));
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 1,
-        // center: latLong,
+        zoom: 4,
+        center: latLong,
         mapTypeControl: true,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
@@ -15,14 +17,14 @@ function initMap(loc) {
 
     // alert(coords.length);
     for (var i = 0; i < 100; i++) {
-        latLong = new google.maps.LatLng(parseFloat(coords[i][1]), parseFloat(coords[i][0]));
+        var latLong = new google.maps.LatLng(parseFloat(coords[i][1]), parseFloat(coords[i][0]));
         var marker = new google.maps.Marker({
             position: latLong,
             map: map
         });
     }
 
-    map.setCenter(latLong);
+    // map.setCenter(latLong);
 
 
     return map;
@@ -31,7 +33,7 @@ function initMap(loc) {
 function init(){
     var url_str = window.location.href;
     var url = new URL(url_str);
-    var search_q = url.searchParams.get("search") || "Austin, TX";
+    var search_q = url.searchParams.get("search") || "Houston, TX";
     var input_box = document.getElementById('search');
     // input_box.value = search_q
 
