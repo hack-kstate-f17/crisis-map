@@ -5,21 +5,24 @@ function initMap(loc) {
     var latLong = new google.maps.LatLng(parseFloat(loc.lat), parseFloat(loc.lng));
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
-        center: latLong,
+        zoom: 3,
+        // center: latLong,
         mapTypeControl: true,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
         }
     });
 
-    for (var i = 20; i < 40; i++) {
-        var latLong = new google.maps.LatLng(parseFloat(coords[i][0]), parseFloat(coords[i][1]));
+    // alert(coords.length);
+    for (var i = 50; i < 100; i++) {
+        latLong = new google.maps.LatLng(parseFloat(coords[i][0]), parseFloat(coords[i][1]));
         var marker = new google.maps.Marker({
             position: latLong,
             map: map
         });
     }
+
+    map.setCenter(latLong);
 
     // var marker = new google.maps.Marker({
     //     position: latLong,
