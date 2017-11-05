@@ -5,7 +5,7 @@ function initMap(loc) {
     var latLong = new google.maps.LatLng(parseFloat(loc.lat), parseFloat(loc.lng));
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 3,
+        zoom: 1,
         // center: latLong,
         mapTypeControl: true,
         mapTypeControlOptions: {
@@ -14,8 +14,8 @@ function initMap(loc) {
     });
 
     // alert(coords.length);
-    for (var i = 50; i < 100; i++) {
-        latLong = new google.maps.LatLng(parseFloat(coords[i][0]), parseFloat(coords[i][1]));
+    for (var i = 0; i < 100; i++) {
+        latLong = new google.maps.LatLng(parseFloat(coords[i][1]), parseFloat(coords[i][0]));
         var marker = new google.maps.Marker({
             position: latLong,
             map: map
@@ -24,10 +24,6 @@ function initMap(loc) {
 
     map.setCenter(latLong);
 
-    // var marker = new google.maps.Marker({
-    //     position: latLong,
-    //     map: map
-    // });
 
     return map;
 }
