@@ -46,6 +46,8 @@ onblur="this.placeholder = 'Search for a location'"required>
     <div id="donutchart" style="width:100%;height: 500px;margin:0 auto;">
     </div>
 
+    <div class="bottom-line"></div>
+
     <!-- Cale code! -->
     <script src="https://unpkg.com/compromise/builds/compromise.min.js"></script>
     <script type="text/javascript" src="result.json"></script>
@@ -54,40 +56,48 @@ onblur="this.placeholder = 'Search for a location'"required>
     <div class = "listcontainer">
       <p class = "listtitle"><strong>Frequently Mentioned</strong></p>
       <div class = "colorlist">
-      <ul>
+      <ol>
         <div class = "listalign">
           <div class = "list1">
-        <li id = "nouns" class = "listitem"> </li>
+        <li id = "nouns1" class = "listitem"> </li>
+        <li id = "nouns2" class = "listitem"> </li>
+        <li id = "nouns3" class = "listitem"> </li>
+        <li id = "nouns4" class = "listitem"> </li>
+        <li id = "nouns5" class = "listitem"> </li>
       </div>
-        <div class = "list1">
+        <!-- <div class = "list1">
         <li id = "adjectives" class = "listitem"> </li>
-      </div>
-        <div class = "list1">
+      </div> -->
+        <!-- <div class = "list1">
         <li id = "verbs" class = "listitem"> </li>
+      </div> -->
       </div>
-      </div>
-      </ul>
+    </ol>
     </div>
     </div>
 
+
     <div class = "jscontainer">
+        <div class="bottom-line"></div>
       <div class = "searchbar">
+        <div class = "listtitle" style="margin-bottom:2%;"><strong>Search Frequency and Sentiment</strong></div>
         <input type="text" id="myText" class= "inputfield" placeholder="enter word/phrase">
-        <button onclick="test()" class = "submitbutton">Search</button>
+        <button onclick="test()" class = "submitbutton"><i class="fa fa-search fa-2x"></i></button>
       </div>
 
       <div class = "myData">
-        <p id = "display1"> </p>
-        <p id = "display2"> </p>
-        <p id = "display3"> </p>
+        <div id = "display1"> </div>
+        <div id = "display2"> </div>
+        <div id = "display3"> </div>
       </div>
     </div>
 
-    <div class="bottom-line"></div>
+    <!-- <div class="bottom-line"></div> -->
 
-    <div class="donate">
+<!-- If Emily wants this she can populate it herself -->
+    <!-- <div class="donate">
       <h4 class="donate"> Donate </h4>
-    </div>
+    </div> -->
   </div>
 
     <!-- <script async defer

@@ -21,7 +21,12 @@ function findfreq () {
 
      console.log(adjectives_arr);
 
-     document.getElementById("nouns").innerHTML = noun_arr[0] + ', ' + noun_arr[34] + ', ' + noun_arr[60] + ', ' + noun_arr[86] + ', ' + noun_arr[97];
+     document.getElementById("nouns1").innerHTML = noun_arr[0] + " (85 mentions)";
+     document.getElementById("nouns2").innerHTML = noun_arr[35] + " (61 mentions)";
+     document.getElementById("nouns3").innerHTML = noun_arr[62] + " (25 mentions)";
+     document.getElementById("nouns4").innerHTML = noun_arr[87] + " (24 mentions)";
+     document.getElementById("nouns5").innerHTML = noun_arr[97] + " (24 mentions)";
+
      document.getElementById("adjectives").innerHTML = adjectives_arr[0] + ', ' + adjectives_arr[40] + ', ' + adjectives_arr[64] + ', ' + adjectives_arr[88] + ', ' + adjectives_arr[117];
      document.getElementById("verbs").innerHTML = verb_arr[0] + ', ' + verb_arr[28] + ', ' + verb_arr[52] + ', ' + verb_arr[53] + ', ' + verb_arr[83];
     // console.log(noun_arr);

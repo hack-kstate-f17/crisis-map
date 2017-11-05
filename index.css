@@ -110,21 +110,18 @@ h4 {
 }
 
 .jscontainer {
-  background-color: orange;
+  background-color: #e4e4e4;
   font-family: 'Roboto', cursive;
 }
 
 .searchbar {
   font-family: 'Roboto', cursive;
-  margin-bottom: 5%;
-  margin-top: 2.5%;
-  background-color: orange;
-  padding-top: 3.5%;
+  margin: 5% 2%;
+  background-color: #e4e4e4;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 .inputfield {
@@ -132,7 +129,9 @@ h4 {
   width: 80%;
   height: 70px;
   font-size: 50px;
+  padding-left: 3%;
   border-style: none;
+  border-radius: 36px 0 0 36px;
 }
 
 .submitbutton {
@@ -141,6 +140,7 @@ h4 {
   background-color: #F0F0F0;
   height: 72px;
   width: 10%;
+  border-radius: 0 36px 36px 0;
 }
 
 .myData {
@@ -152,37 +152,28 @@ h4 {
 
 #display1 {
   background-color: #e4e4e4;
-  padding: 1.5%;
-  padding-top: 1.5%;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  margin: 10px 12.5%;
 }
 
 #display2 {
- background-color: #e4e4e4;
- padding: 1.5%;
- padding-top: 1.5%;
- margin-left: 12.5%;
- margin-right: 12.5%;
+  background-color: #e4e4e4;
+  margin: 10px 12.5%;
 }
 
 #display3 {
  background-color: #e4e4e4;
- padding: 1.5%;
- padding-top: 10%;
- margin-left: 12.5%;
- margin-right: 12.5%;
+ margin: 10px 12.5%;
 }
 
 .listcontainer {
     font-family: 'Roboto', cursive;
-    background-color: white;
+    background-color: #e4e4e4;
     padding-top: .25%;
     padding-bottom: 3.5%;
 }
 
 .listtitle {
-  font-size: 300%;
+  font-size: 200%;
 }
 
 .listitem {
