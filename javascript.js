@@ -15,13 +15,15 @@ function findfreq () {
 
     // console.log(totalStr);
 
-     var noun_arr = nlp(totalStr).nouns().sort('wordcount').out('array');
-     var verb_arr = nlp(totalStr).verbs().sort('wordcount').out('array');
-     var adjectives_arr = nlp(totalStr).adjectives().sort('wordcount').out('array');
+     var noun_arr = nlp(totalStr).nouns().sort('frequency').out('array');
+     var verb_arr = nlp(totalStr).verbs().sort('frequency').out('array');
+     var adjectives_arr = nlp(totalStr).adjectives().sort('frequency').out('array');
 
-     document.getElementById("nouns").innerHTML = noun_arr[0] + ', ' + noun_arr[1] + ', ' + noun_arr[2] + ', ' + noun_arr[3] + ', ' + noun_arr[4];
-     document.getElementById("adjectives").innerHTML = adjectives_arr[0] + ', ' + adjectives_arr[2] + ', ' + adjectives_arr[4] + ', ' + adjectives_arr[5] + ', ' + adjectives_arr[1];
-     document.getElementById("verbs").innerHTML = verb_arr[0] + ', ' + verb_arr[1] + ', ' + verb_arr[2] + ', ' + verb_arr[3] + ', ' + verb_arr[4];
+     console.log(adjectives_arr);
+
+     document.getElementById("nouns").innerHTML = noun_arr[0] + ', ' + noun_arr[34] + ', ' + noun_arr[60] + ', ' + noun_arr[86] + ', ' + noun_arr[97];
+     document.getElementById("adjectives").innerHTML = adjectives_arr[0] + ', ' + adjectives_arr[40] + ', ' + adjectives_arr[64] + ', ' + adjectives_arr[88] + ', ' + adjectives_arr[117];
+     document.getElementById("verbs").innerHTML = verb_arr[0] + ', ' + verb_arr[28] + ', ' + verb_arr[52] + ', ' + verb_arr[53] + ', ' + verb_arr[83];
     // console.log(noun_arr);
 
     //  var myconcat = "";
