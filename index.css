@@ -1,3 +1,9 @@
+h1 {
+    color: #ff8200;
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+}
+
 #map {
     height: 400px;
     width: 100%;
@@ -13,6 +19,7 @@ input {
     /*height: 25px;*/
     width: 180px;
 }
+
 #button {
     height: 25px;
     width: 75px;
