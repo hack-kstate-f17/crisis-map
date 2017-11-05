@@ -24,7 +24,7 @@ function init(){
     var url = new URL(url_str);
     var search_q = url.searchParams.get("search") || "Austin, TX";
     var input_box = document.getElementById('search');
-    input_box.value = search_q
+    // input_box.value = search_q
 
 
     var map = geocode_map(search_q);

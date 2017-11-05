@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
   </head>
 
-  <h1> Crisis Map </h1>
-
-  <body style="width: 70%; margin: auto;">
-    <!-- <h3>My Google Maps Demo</h3> -->
-
-    <form id="form">
-        <input id="search" type="text" name="search" placeholder="search for a location" required>
-        <input id="button" type="submit" value="search">
-    </form>
-
-    <div id="map">
+  <div class="header">
+    <div class="header-item">
+      <h1> Crisis Map </h1>
     </div>
+    <div class="header-item">
+      <form id="form">
+          <input id="search" type="text" name="search" placeholder="search for a location" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Search for a location'"required>
+          <!-- <input id="button" type="submit" value="search"> -->
+          <button id="button" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+  </div>
+    <div class="bottom-line"></div>
+
+  <body>
+    <!-- <h3>My Google Maps Demo</h3> -->
+    <div class="body-container">
+
+    <div class="map-container">
+      <div id="map">
+      </div>
+
+      <h3><u>Header Text</u></h3>
+      <p>description text. description describing text text description of text to describe descriptive text text text textual descriptions describing text.</p>
+
+    </div>
+    <div class="bottom-line"></div>
 
     <div id="chart_div">
     </div>
+    <div class="bottom-line"></div>
 
-    <div id="donutchart" style="width: 900px; height: 500px;">
+    <div id="donutchart" style="width:100%;height: 500px;margin:0 auto;">
     </div>
-
+  </div>
     <!-- <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbJ3fxgeRnJ0aTP2_bsdGlChoyVki465U">
     </script> -->
