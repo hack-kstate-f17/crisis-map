@@ -23,7 +23,7 @@ def remove_elems_two(count_arr, tags_arr):
     new_counts = []
     new_tags = []
     for i in range(len(count_arr)):
-        if count_arr[i] > 500:
+        if count_arr[i] > 100:
             new_counts.append(count_arr[i])
             new_tags.append(tags_arr[i])
 

@@ -1,12 +1,15 @@
 google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-    ['Reaction', 'Percentage'],
-    ['positive',     33],
-    ['neutral',      33],
-    ['negative',      33]
-  ]);
+    // alert("Drawering");
+
+
+    var data = google.visualization.arrayToDataTable([
+        ['Reaction', 'Percentage'],
+        ['positive',     59.6],
+        ['neutral',      23.2],
+        ['negative',      17.2]
+    ]);
 
   var options = {
     title: 'Sentiment',
