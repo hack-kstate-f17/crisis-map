@@ -4,10 +4,12 @@ h1 {
     font-family: 'Roboto', sans-serif;
     /*font-family: 'Fredoka One', cursive;*/
     font-size: 50px;
+    padding-left: 10%;
 }
 
 #form{
   align-self: flex-end;
+  padding-right: 10px;
 }
 
 #map {
@@ -15,7 +17,21 @@ h1 {
     width: 100%;
 }
 
+#donate{
+    height: 100px;
+    width: 100%;
+}
+
+/*Lines*/
+
+.top-line {
+  width:100%;
+  height:7px;
+  background-color:#FC4349;
+}
+
 .bottom-line{
+  margin-top: 20px;
   width:100%;
   height:7px;
   background-color:#FC4349;
@@ -32,8 +48,11 @@ h1 {
 }
 
 .map-container{
-  background-color:#D7DADB;
+  /*background-color:#D7DADB;*/
+  background-color: #e4e4e4;
   padding:3% 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header-item{
@@ -41,7 +60,8 @@ h1 {
 }
 
 html{
-  background-color:#acaeaf;
+  /*background-color:#acaeaf;*/
+  background-color: #cacaca;
 }
 
 body {
@@ -58,15 +78,36 @@ body {
 input {
     /*height: 25px;*/
     width: 180px;
+    font-size: 16px;
 }
 
 #button {
     height: 30px;
     width: 30px;
     border-radius: 30px;
-    background-color: #6DBCDB;
+    /*background-color: #6DBCDB;*/
+    background: #FC4349;
     border-style:none;
+}
 
+h3 {
+  font-size: 30px;
+}
+
+.p2 {
+  font-size: 14px;
+}
+
+.donate {
+    background-color: #e4e4e4;
+    padding:3% 5%;
+    margin: 0 auto;
+}
+
+h4 {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 20px;
 }
 /*input:invalid {
     outline: 2px solid red;
