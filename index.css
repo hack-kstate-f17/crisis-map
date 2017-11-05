@@ -1,0 +1,25 @@
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+body {
+    text-align: center;
+    padding-top: 25px;
+}
+
+input {
+    /*height: 25px;*/
+    width: 180px;
+}
+#button {
+    height: 25px;
+    width: 75px;
+}
+/*input:invalid {
+    outline: 2px solid red;
+}*/
+/*input:focus:invalid {
+    color: red;
+}*/
